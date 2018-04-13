@@ -28,6 +28,8 @@
     <div id="blokas"></div> 
 <script>
     var divas = document.getElementById("blokas");
+    var reiksmes = document.createTextNode('Plotis:'+ plotis + "; " + 'Aukstis:' + aukstis +'; ');
+    divas.appendChild(reiksmes);
     var reiksmes = document.createTextNode('Perimetras yra: '+ perimetras +'; ');
     divas.appendChild(reiksmes);
     var reiksmes = document.createTextNode('Plotas yra: '+ plotas +'; ');
@@ -36,6 +38,7 @@
     divas.appendChild(reiksmes);  
     var reiksmes = document.createTextNode('Suapvalinta istrizaine yra: '+ Sistrizaine +'; ');    
     divas.appendChild(reiksmes); 
+
 </script>
 </body>
 </html>
