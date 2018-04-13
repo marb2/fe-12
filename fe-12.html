@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>fe-12</title>  
+    <style>
+        #blokas {
+            border:2px solid black;
+        }
+    </style>  
+    <script>
+        var plotis = 5;
+        var aukstis = 8;
+        var perimetras = plotis * 2 + aukstis * 2;
+        var plotas = plotis * aukstis;
+        var istrizaine = Math.sqrt(Math.pow(plotis, 2) + Math.pow(aukstis, 2));
+        var Sistrizaine = Math.round(10*istrizaine)/10;
+        console.log('Plotis:'+ plotis + " " + 'Aukstis:' + aukstis);
+        console.log('Perimetras yra: '+ perimetras);
+        console.log('Plotas yra: '+ plotas);
+        console.log('Istrizaine yra: '+ istrizaine);
+        console.log('Suapvalinta istrizaine yra: '+ Sistrizaine);
+    </script>
+</head>
+<body>
+    <div id="blokas"></div> 
+<script>
+    var divas = document.getElementById("blokas");
+    var reiksmes = document.createTextNode('Perimetras yra: '+ perimetras +'; ');
+    divas.appendChild(reiksmes);
+    var reiksmes = document.createTextNode('Plotas yra: '+ plotas +'; ');
+    divas.appendChild(reiksmes);
+    var reiksmes = document.createTextNode('Istrizaine yra: '+ istrizaine +'; ');
+    divas.appendChild(reiksmes);  
+    var reiksmes = document.createTextNode('Suapvalinta istrizaine yra: '+ Sistrizaine +'; ');    
+    divas.appendChild(reiksmes); 
+</script>
+</body>
+</html>
